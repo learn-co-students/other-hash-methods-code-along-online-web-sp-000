@@ -9,11 +9,5 @@ require 'pry'
 # }
 
 def get_the_values(groceries)
-new = []
-  groceries.each do |key, value|
-    value.sort do |a, b|
-      new << a <=> b
-    end
-  end
-return new[0]
+groceries.values.flatten
 end
