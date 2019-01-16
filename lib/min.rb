@@ -10,4 +10,20 @@ require 'pry'
 
 def get_the_min(groceries)
   #code your solution here!
+  val = ""
+  groceries.each do |attr, data|
+    if val == ""
+      val = data.min
+    elsif data.min < val
+      val = data.min
+    end
+#    data.each do |value| 
+#      if val == "" 
+#        val = data.min
+#      elsif value < val
+#        val = value
+#      end
+#    end
+  end
+  val
 end
