@@ -9,5 +9,10 @@ require 'pry'
 # }
 
 def get_the_values(groceries)
-  #code your solution here!
+    new_arr = []
+      groceries.each do |key, value|
+        new_arr.push(value)
+      end
+    new_arr.flatten
+    #binding.pry
 end
