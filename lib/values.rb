@@ -9,5 +9,12 @@ require 'pry'
 # }
 
 def get_the_values(groceries)
-  #code your solution here!
+  newGroceries = groceries.values
+  rArray = []
+  newGroceries.each do | row |
+    row.each do | food |
+      rArray << food
+    end
+  end
+  return rArray
 end

@@ -9,5 +9,15 @@ require 'pry'
 # }
 
 def get_the_min(groceries)
-  #code your solution here!
+  lowest = "zzz"
+  allFood = []
+  foodList = groceries.values
+  foodList.each do | foodGroup |
+    foodGroup.each do | food |
+      if (lowest > food)
+        lowest = food
+      end
+    end
+  end
+  return lowest
 end
