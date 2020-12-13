@@ -9,5 +9,10 @@ require 'pry'
 # }
 
 def get_the_min(groceries)
-  #code your solution here!
+  groceries.values.flatten.min 
 end
+
+#want to use the min method to collect the value that comes first  
+# step one is to call all the values in a one-dimensional flat way  
+#use groceries.values.flatten 
+#next use groceries.values.flatten.min  
