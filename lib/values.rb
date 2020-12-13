@@ -9,5 +9,7 @@ require 'pry'
 # }
 
 def get_the_values(groceries)
-  #code your solution here!
+ groceries.values.flatten
 end
+
+#Using .values.flatten will return only the values without their keys in a one-dimensional array 
