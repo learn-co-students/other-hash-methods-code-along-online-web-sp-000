@@ -10,4 +10,11 @@ require 'pry'
 
 def get_the_values(groceries)
   #code your solution here!
+  retArray = []
+  groceries.values.each do |value|
+    value.each do |val|
+      retArray << val
+    end
+  end
+  retArray
 end
