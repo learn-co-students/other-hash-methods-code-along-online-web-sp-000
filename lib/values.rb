@@ -8,6 +8,7 @@ require 'pry'
 #  grains: ["rice", "pasta"]
 # }
 
+# return the values in a hash
 def get_the_values(groceries)
-  #code your solution here!
+  groceries.values.flatten
 end
