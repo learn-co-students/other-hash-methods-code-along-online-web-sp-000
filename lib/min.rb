@@ -9,5 +9,9 @@ require 'pry'
 # }
 
 def get_the_min(groceries)
-  #code your solution here!
+  groceries.each do |stuff, food|
+    if stuff == :vegetable
+      return food.min 
+    end
+  end
 end
